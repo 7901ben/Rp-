@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <div class="container">
+    <form action="/action_page.php" method="post">
+      <div class="heading">
+          <h2>Login to your account </h2>
+      </div>
+   
+    <label for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <button type="submit">Sign Up</button>
+    
+    
+    <span class="psw">New to app ? <a href="register.html">Sign Up </a></span>
+  </div>
+
+
+</form>
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId            : 'your-app-id',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v14.0'
+      });
+    };
+  </script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+      
+</body>
+</html>
